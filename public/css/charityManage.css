@@ -1,0 +1,97 @@
+/* charityManage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Manage Section */
+#manageSection {
+    margin-bottom: 20px;
+}
+
+#searchQuery {
+    width: 300px;
+    padding: 6px;
+}
+
+#searchResults {
+    margin-top: 10px;
+}
+
+/* Update Forms */
+#updateCharityContainer,
+#updateImpactContainer {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Register New Charity Form */
+#charityForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#charityForm h2 {
+    flex-basis: 100%;
+    margin: 0 0 10px 0;
+}
+
+/* General form elements */
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    padding: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Horizontal rule */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Search results list styling */
+.search-results-list {
+    list-style: none;
+    padding: 0;
+}
+
+.search-result-item {
+    margin-bottom: 10px;
+}
+
+.search-result-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Make a Donation</title>
+    <link rel="stylesheet" href="../css/donation.css">
+</head>
+
+<body>
+    <h1>Donate to a Charity</h1>
+
+    <!-- Search area -->
+    <div class="search-area">
+        <input type="text" id="searchQuery" placeholder="Search by name, mission...">
+        <button onclick="searchCharities()">Search</button>
+    </div>
+
+    <!-- Search results -->
+    <div id="charitiesList"></div>
+
+    <hr>
+    <button onclick="logout()">Logout</button>
+
+    <!-- Razorpay Checkout -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/donation.js"></script>
+</body>
+
+</html>

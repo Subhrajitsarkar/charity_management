@@ -1,0 +1,40 @@
+/* public/css/charity.css */
+
+/* Profile Form Styles */
+.profile-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-form label {
+    margin-bottom: 0;
+}
+
+/* Donation History Styles */
+.donation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-item {
+    margin-bottom: 10px;
+}
+
+.donation-item-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Hide the Admin Dashboard link by default */
+#adminLink {
+    display: none;
+}

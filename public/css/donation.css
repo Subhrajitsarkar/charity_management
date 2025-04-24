@@ -1,0 +1,53 @@
+/* donation.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-area {
+    margin-bottom: 20px;
+}
+
+#searchQuery {
+    width: 300px;
+    padding: 6px;
+}
+
+#charitiesList {
+    margin-bottom: 20px;
+}
+
+ul.donation-results-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.donation-result-item {
+    margin-bottom: 10px;
+}
+
+.donation-result-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.donation-amount-input {
+    width: 120px;
+    padding: 4px;
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+}

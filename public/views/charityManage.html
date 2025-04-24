@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Charity Management</title>
+    <link rel="stylesheet" href="../css/charityManage.css">
+</head>
+
+<body>
+    <h1>Charity Management</h1>
+    <p>Register a new charity or manage existing ones.</p>
+
+    <!-- Search and Manage Existing Charity -->
+    <div id="manageSection">
+        <input type="text" id="searchQuery" placeholder="Search charities..." oninput="searchCharities()">
+        <div id="searchResults">
+            <!-- A container where  Real-time search results will appear -->
+        </div>
+    </div>
+
+    <!-- Hidden Update Charity Form (Prompt) -->
+    <div id="updateCharityContainer">
+        <h3>Update Charity Details</h3>
+        <p>(Leave a field blank to keep it unchanged.)</p>
+        <form id="updateCharityForm" onsubmit="updateCharity(event)" autocomplete="off">
+            <label for="updName">Name:</label>
+            <input type="text" id="updName">
+            <label for="updMission">Mission:</label>
+            <input type="text" id="updMission">
+            <label for="updLocation">Location:</label>
+            <input type="text" id="updLocation">
+            <label for="updCategory">Category:</label>
+            <input type="text" id="updCategory">
+            <button type="submit">Update Charity</button>
+            <button type="button" onclick="hideUpdateCharityForm()">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Hidden Update Impact Report Form (Prompt) -->
+    <div id="updateImpactContainer">
+        <h3>Update Impact Report</h3>
+        <p>(Leave blank to keep the current report unchanged.)</p>
+        <form id="updateImpactForm" onsubmit="updateImpact(event)" autocomplete="off">
+            <label for="updImpact">Impact Report:</label>
+            <input type="text" id="updImpact">
+            <button type="submit">Update Impact Report</button>
+            <button type="button" onclick="hideUpdateImpactForm()">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Register New Charity Form -->
+    <form id="charityForm" onsubmit="createCharity(event)" autocomplete="off">
+        <h2>Register New Charity</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="mission">Mission:</label>
+        <input type="text" id="mission">
+        <label for="location">Location:</label>
+        <input type="text" id="location">
+        <label for="category">Category:</label>
+        <input type="text" id="category">
+        <button type="submit">Register Charity</button>
+    </form>
+    <hr>
+
+    <button onclick="logout()">Logout</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/charityManage.js"></script>
+</body>
+
+</html>

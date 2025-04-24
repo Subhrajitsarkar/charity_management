@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile & Donation History</title>
+    <link rel="stylesheet" href="../css/charity.css">
+</head>
+
+<body>
+    <h1>User Profile</h1>
+
+    <!-- Profile Form arranged in one row -->
+    <form id="profileForm" class="profile-form" onsubmit="updateProfile(event)">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="text" id="number" name="number" required>
+
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <!-- Donation History (only successful donations) -->
+    <h2>Donation History</h2>
+    <div id="donationHistory">
+        <!-- Donation history will be rendered here -->
+    </div>
+
+    <br />
+
+    <!-- Navigation Links -->
+    <a href="/donation">Make a Donation</a> |
+    <a href="/donation-history">View Donation History</a> |
+    <a href="/charity-manage">Manage Charity</a> |
+    <a href="/admin-dashboard" id="adminLink">Admin Dashboard</a>
+
+    <br /><br />
+    <button id="logoutBtn">Logout</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/charity.js"></script>
+</body>
+
+</html>
